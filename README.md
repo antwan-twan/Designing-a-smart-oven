@@ -122,7 +122,7 @@ To do this, follow these steps:
 
 
 ## 4. Results
-[![Video Results](https://imgur.com/yxisU7T)](https://vimeo.com/764351321 "CMD IoT 2022_2023")
+[![Video Results]([Imgur](https://i.imgur.com/yxisU7T.png))](https://vimeo.com/764351321 "CMD IoT 2022_2023")
 
 # Sources
 - https://learn.adafruit.com/adafruit-io-basics-servo/overview
