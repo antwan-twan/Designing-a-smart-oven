@@ -75,7 +75,7 @@ Go to the *config.h* file and fill in your Adafruit IO username and key as well 
 
 You don't need to change much to the code. 
 
-On line 32 change the <font color= "red">SERVO_PIN</font> to 'D2'
+On line 32 change the <p style="color:red">SERVO_PIN</p> to 'D2'
 
 
 
