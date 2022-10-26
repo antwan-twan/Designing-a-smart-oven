@@ -262,3 +262,4 @@ To do this, follow these steps:
 # Sources
 - https://learn.adafruit.com/adafruit-io-basics-servo/overview
 - https://forum.arduino.cc/t/servo-reversing-with-code/878196/6
+- https://forum.arduino.cc/t/help-with-controlling-servos-led-strips-using-arduino/555506
