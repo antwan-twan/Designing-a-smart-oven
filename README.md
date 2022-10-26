@@ -18,6 +18,73 @@ and maybe some cables to connect your Servo to the board. Although this depends 
 ### Adafruit IO Setup
 First of all create an account on [Adafruit IO](io.adafruit.com).
 Afterwards, go to your Account settings and retrieve your key.
+
 <img src="img\key.png" width="375px" alt="Adafruit IO Key">
 
 #### Create your feed
+In Adafruit IO, create a new feed with the name Servo. 
+
+<img src="img\feed.png" width="375px" alt="feed">
+
+#### Create a new dashboard
+Also create a new dashboard.
+You can name this whatever you want, but make sure to remember it.
+
+<img src="img\newdashboard.png" width="375px" alt="dashboard">
+
+In this dashboard, create a new block and choose slider block.
+It'll ask you what kind of feed you want to connect to your block. Choose the feed you have created in the previous tip.
+Set the minimum value to zero and the maximum value to 180. You can leave the rest empty.
+
+<img src="img\blockset.png" width="375px" alt="block settings">
+
+
+## 2. Wiring
+now it's time to connect your wires to your servo motor and your Arduino Board.
+
+You will need to connect the following pins to the servo using the three wires:
+- Connect GND to the brown or black servo wire
+- Connect 3V3 to the red servo wire
+- Connect Pin D2 to the yellow servo wire
+
+I've used an extension cable but it should work the same. Follow the origninal colors of the servo cables. This maybe a bit difficult, but it will help in the end. 
+
+<img src="img\wiring.png" width="375px" alt="servo wiring">
+
+## 3. Arduino Code
+This one is quite simple, you Just need to connectthe Arduino Library to your Arduino IDE. 
+In the library manager, search for Adafruit IO Arduino by Adafruit and install the latest version.
+
+<img src="img\wiring.png" width="375px" alt="library manager">
+
+If all goes well, open in File > Examples > Adafruit IO Arduino > adafruitio_16_servo.
+
+### Network Config
+The example files are already stocked with information. All of the details you need to fill in are provided.
+
+Go to the *config.h* file and fill in your Adafruit IO username and key as well as your WiFi-network name and password. 
+
+<img src="img\config.png" width="375px" alt="config.h">
+
+> :warning: In my case I'm using an iPhone hotspot, which means I have to turn on the 'Maximise Compatibility' function in order for the board to correctly connect to the internet.
+>
+> :warning: Otherwhise, make sure that your Android Hotspot or WiFi-router is capable of 2,4gHz networking. This is the **only way** to connect. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Sources
+- https://learn.adafruit.com/adafruit-io-basics-servo/overview
