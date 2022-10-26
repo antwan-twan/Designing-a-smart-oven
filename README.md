@@ -70,10 +70,12 @@ Go to the *config.h* file and fill in your Adafruit IO username and key as well 
 >
 > :warning: Otherwhise, make sure that your Android Hotspot or WiFi-router is capable of 2,4gHz networking. This is the **only way** to connect. 
 
+> :warning: The guide I'm following also states tha you could uncomment some lines of code for Ethernet or FONA config, but skip those both.
 
 
+You don't need to change much to the code. 
 
-
+On line 32 change the <font color= "red">SERVO_PIN</font> to 'D2'
 
 
 
