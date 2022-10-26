@@ -75,7 +75,18 @@ Go to the *config.h* file and fill in your Adafruit IO username and key as well 
 
 You don't need to change much to the code. 
 
-On line 32 change the <p style="color:red">SERVO_PIN</p> to 'D2'
+On line 32: change the SERVO_PIN to 'D2'.
+
+On line 38: change the feed name to the feed you've created. In my case, I had to change it to 'Servo' with a capital 'S'. 
+
+<img src="img\code.png" width="375px" alt="code changes">
+
+Upload your code, but make sure to compile first, to work out any errors. 
+
+> :pencil: Somehow the angle of the Servo in combination with the Adafruit IO Dashboard was inverted. Meaning that when I tell the arduino to write an angle of 180, it goes all the way to the left, which is zero.
+>
+> After doing some research, I've managed to find a solution for this problem. It's quite an easy fix. 
+> Convert the line "int angle = data->toInt();" to 'int angle = 180 - data->toInt();". This fixes the output by a simple equation. 
 
 
 
