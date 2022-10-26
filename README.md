@@ -114,7 +114,7 @@ To do this, follow these steps:
     }
 ```
 
-
+> :warning: Somehow, only one LED of my LEDstrip was turning on. I don't know what causes this problem to occur. However, I've encountered this problem before while working at a project for another course. It's related to the power distribution in the Arduino. Both the Servo-motor and the LEDstrip require quite some power and somehow the board can't handle this.
 
 
 
