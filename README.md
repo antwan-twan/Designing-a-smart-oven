@@ -72,7 +72,7 @@ Go to the *config.h* file and fill in your Adafruit IO username and key as well 
 
 > :warning: The guide I'm following also states tha you could uncomment some lines of code for Ethernet or FONA config, but skip those both.
 
-
+### Changes in the code
 You don't need to change much to the code. 
 
 On line 32: change the SERVO_PIN to 'D2'.
@@ -88,9 +88,17 @@ Upload your code, but make sure to compile first, to work out any errors.
 > After doing some research, I've managed to find a solution for this problem. It's quite an easy fix. 
 > Convert the line "int angle = data->toInt();" to 'int angle = 180 - data->toInt();". This fixes the output by a simple equation. 
 
+### Adding a LEDstrip
+After the servo was done, I tried adding a LEDstrip to work together with the data. 
 
+To do this, follow these steps:
+1. Add the following code somewhere at the beginning of the file, but before any void setup/loops.
+    `#include <Adafruit_NeoPixel.h>
 
-
+    #define PIN D5
+    #define NUMPIXELS 10
+    int i = 0;
+    Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);`
 
 
 
@@ -101,3 +109,4 @@ Upload your code, but make sure to compile first, to work out any errors.
 
 # Sources
 - https://learn.adafruit.com/adafruit-io-basics-servo/overview
+- https://forum.arduino.cc/t/servo-reversing-with-code/878196/6
