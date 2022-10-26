@@ -93,16 +93,18 @@ After the servo was done, I tried adding a LEDstrip to work together with the da
 
 To do this, follow these steps:
 1. Add the following code somewhere at the beginning of the file, but before any void setup/loops.
-    
+```
     #include <Adafruit_NeoPixel.h>
 
     #define PIN D5
+
     #define NUMPIXELS 10
     int i = 0;
     Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+```
 
 2. In 'void handleMessage' add the following code:
-
+```
      if(angle < 90){
     pixels.setPixelColor(i, pixels.Color(0, 150, 0));
     pixels.show();
@@ -110,7 +112,7 @@ To do this, follow these steps:
     pixels.setPixelColor(i, pixels.Color(150, 0, 0));
     pixels.show();
     }
-
+```
 
 
 
