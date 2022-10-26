@@ -125,7 +125,9 @@ To do this, follow these steps:
 [![Video Results]([Imgur](https://i.imgur.com/yxisU7T.png))](https://vimeo.com/764351321 "CMD IoT 2022_2023")
 <video>
 <source src="cmd_iot_2022_2023 (1080p).mp4" type="video/mp4">
+Results
 </video>
+
 # Sources
 - https://learn.adafruit.com/adafruit-io-basics-servo/overview
 - https://forum.arduino.cc/t/servo-reversing-with-code/878196/6
