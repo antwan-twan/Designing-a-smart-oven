@@ -55,7 +55,7 @@ I've used an extension cable but it should work the same. Follow the origninal c
 This one is quite simple, you Just need to connectthe Arduino Library to your Arduino IDE. 
 In the library manager, search for Adafruit IO Arduino by Adafruit and install the latest version.
 
-<img src="img\wiring.png" width="375px" alt="library manager">
+<img src="img\library.png" width="375px" alt="library manager">
 
 If all goes well, open in File > Examples > Adafruit IO Arduino > adafruitio_16_servo.
 
