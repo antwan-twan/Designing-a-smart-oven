@@ -5,7 +5,7 @@ Its a smart oven connected via IoT.
 
 I'll be making a tiny part of the interface using a Servo-motor and an ESP8266 board (also known as NodeMCU 1.0 (ESP-12E Module)). 
 
-## 1. Setup
+<details> <summary>## 1. Setup</summary>
 For this experiment, you'll need a:
 - Computer with Arduino IDE installed
 - An Adafruit IO account
@@ -37,7 +37,7 @@ It'll ask you what kind of feed you want to connect to your block. Choose the fe
 Set the minimum value to zero and the maximum value to 180. You can leave the rest empty.
 
 <img src="img\blockset.png" width="375px" alt="block settings">
-
+</details>
 
 ## 2. Wiring
 now it's time to connect your wires to your servo motor and your Arduino Board.
