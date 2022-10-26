@@ -5,7 +5,7 @@ Its a smart oven connected via IoT.
 
 I'll be making a tiny part of the interface using a Servo-motor and an ESP8266 board (also known as NodeMCU 1.0 (ESP-12E Module)). 
 
-<details> <summary>## 1. Setup</summary>
+## 1. Setup
 For this experiment, you'll need a:
 - Computer with Arduino IDE installed
 - An Adafruit IO account
@@ -37,10 +37,10 @@ It'll ask you what kind of feed you want to connect to your block. Choose the fe
 Set the minimum value to zero and the maximum value to 180. You can leave the rest empty.
 
 <img src="img\blockset.png" width="375px" alt="block settings">
-</details>
+
 
 ## 2. Wiring
-now it's time to connect your wires to your servo motor and your Arduino Board.
+Now it's time to connect your wires to your servo motor and your Arduino Board.
 
 You will need to connect the following pins to the servo using the three wires:
 - Connect GND to the brown or black servo wire
@@ -118,6 +118,11 @@ To do this, follow these steps:
 
 
 
+
+
+
+## 4. Results
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/764351321?h=c7a89f03d7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="CMD IoT 20222023"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 # Sources
